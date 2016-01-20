@@ -38,6 +38,7 @@ describe Paymill::Subscription do
       subscription.payment[:id].should eql("pay_3af44644dd6d25c820a8")
       subscription.trial_start.to_i.should eql(1349945681)
       subscription.trial_end.to_i.should eql(1349945682)
+      subscription.amount.to_i.should eql(500)
     end
   end
 
